@@ -1,0 +1,25 @@
+[user]
+    name = justin
+[branch]
+    autosetuprebase = always
+[push]
+    default = current
+[fetch]
+    prune = true
+[alias]
+    lg = log --graph --pretty=format:'%C(yellow)%h%Creset  %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -10
+	co = checkout
+	st = status
+	br = branch
+    feap = fetch --all --prune
+    rc = rebase --continue
+    ri = rebase -i --autostash
+    fwl = push --force-with-lease
+	unstage = reset HEAD
+[rerere]
+    enabled = true
+[core]
+    editor = /usr/bin/vim
+	ignorecase = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
