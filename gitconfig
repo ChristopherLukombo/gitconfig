@@ -11,7 +11,7 @@
 	co = checkout
 	st = status
 	br = branch
-    feap = fetch --all --prune
+    feap = fetch --all --prune --verbose
     rc = rebase --continue
     ri = rebase -i --autostash
     fwl = push --force-with-lease
