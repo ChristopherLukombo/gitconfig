@@ -12,6 +12,7 @@
 	feap = fetch --all --prune --verbose
 	rc = rebase --continue
         ri = rebase -i
+        fwl = push --force-with-lease
 	unstage = reset HEAD
 [core]
 	editor = vim
