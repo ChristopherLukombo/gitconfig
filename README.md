@@ -20,3 +20,4 @@ Voilà.
 Qu'en pensez-vous ?
 Si vous avez d'autres idées, n'hésitez pas à me le faire savoir.
 
+https://stackoverflow.com/questions/47435547/how-can-i-prevent-creating-batch-tables-using-spring-batch
