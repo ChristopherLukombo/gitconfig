@@ -23,3 +23,6 @@ begin
     return is_creation;
 END
 $$ LANGUAGE plpgsql;
+
+
+select cd.*, isPacoCreation(cd.calendar_name , cd."day") as "is_paco_creation"  from closed_day cd 
