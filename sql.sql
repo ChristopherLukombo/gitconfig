@@ -5,5 +5,9 @@ console.log(todayDate);
 
 https://stackblitz.com/edit/angular-bkuexc?file=src%2Fapp%2Fdatepicker%2Fdatepicker.utc.date.adapter.ts
 
+new Date().toLocaleString("en-US", {timeZone: "America/New_York"})
+
+ Europe/Paris
+ 
  const now = new Date();
     return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
