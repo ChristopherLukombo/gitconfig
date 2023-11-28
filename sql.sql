@@ -12,3 +12,5 @@ new Date().toLocaleString("en-US", {timeZone: "America/New_York"})
  const now = new Date();
     return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
 https://stackoverflow.com/questions/55118888/how-to-change-ngbdatepicker-format-from-yyyy-mm-dd-to-mm-dd-yyyy-angular-4
+
+ https://stackblitz.com/edit/angular-ikdpp5?file=src%2Fapp%2Fdatepicker-adapter.ts
