@@ -8,6 +8,6 @@ https://stackblitz.com/edit/angular-bkuexc?file=src%2Fapp%2Fdatepicker%2Fdatepic
 new Date().toLocaleString("en-US", {timeZone: "America/New_York"})
 
  Europe/Paris
- 
+ new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"
  const now = new Date();
     return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
