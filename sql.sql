@@ -6,7 +6,9 @@ console.log(todayDate);
 https://stackblitz.com/edit/angular-bkuexc?file=src%2Fapp%2Fdatepicker%2Fdatepicker.utc.date.adapter.ts
 
 new Date().toLocaleString("en-US", {timeZone: "America/New_York"})
-
+var a = '2023-11-12'
+ a.split('-');
+var a
  Europe/Paris
  new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"
  const now = new Date();
