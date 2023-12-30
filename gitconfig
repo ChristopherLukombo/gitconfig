@@ -4,7 +4,7 @@
 	name = Christopher LUKOMBO
 [alias]
 	co = checkout
-	branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:white)%(authorname)' --sort=-committerdate
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:white)%(authorname)' --sort=-committerdate
 	ci = commit
 	st = status
 	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
