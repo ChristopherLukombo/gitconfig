@@ -14,9 +14,9 @@
 	rc = rebase --continue
         ri = rebase -i
         fwl = push --force-with-lease
-	unstage = reset HEAD
         cp = cherry-pick
         cpm = cherry-pick -m 1 
+	unstage = reset HEAD
 [core]
 	editor = vim
 	autocrlf = true
