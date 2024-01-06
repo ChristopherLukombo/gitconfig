@@ -17,7 +17,7 @@
         cp = cherry-pick
         cpm = cherry-pick -m 1 
 	unstage = reset HEAD
-        del = push origin --delete
+        del = push origin --delete --verbose
 [core]
 	editor = vim
 	autocrlf = true
