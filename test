@@ -26,3 +26,9 @@ https://products.fileformat.com/email/java/apache-poi-hsmf/
 https://docs.aspose.com/email/java/creating-and-saving-msg-files/
 https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad
 https://github.com/ctabin/jotlmsg
+
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;
+    font-size: 15px;
+}
