@@ -32,5 +32,5 @@ https://github.com/ctabin/jotlmsg
     background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;
     font-size: 15px;
 }
-
+https://stackoverflow.com/questions/66475017/aws-sdk-support-for-custom-truststore
 https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-path-to-requested-target-with-aws-security-to
