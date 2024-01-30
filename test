@@ -37,5 +37,5 @@ https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-
 
 
 -vmargs
--Djavax.net.ssl.trustStore="C:/Users/b91255/jdk1.8.0_65/jre/lib/security/cacerts "
+-Djavax.net.ssl.trustStore=/path/to/mykeystore.jks
 -Djavax.net.ssl.trustStorePassword="changeit"
