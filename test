@@ -34,3 +34,8 @@ https://github.com/ctabin/jotlmsg
 }
 https://stackoverflow.com/questions/66475017/aws-sdk-support-for-custom-truststore
 https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-path-to-requested-target-with-aws-security-to
+
+
+-vmargs
+-Djavax.net.ssl.trustStore="C:/Users/b91255/jdk1.8.0_65/jre/lib/security/cacerts "
+-Djavax.net.ssl.trustStorePassword="changeit"
