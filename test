@@ -39,3 +39,4 @@ https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-
 -Djavax.net.ssl.trustStore="/Program Files/Java/jdk1.8.0_261/jre/bin/mykeystore.jks"
 -Djavax.net.ssl.trustStoreType=jks 
 -Djavax.net.ssl.trustStorePassword=changeit
+-Djavax.net.debug=ssl
