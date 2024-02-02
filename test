@@ -40,3 +40,5 @@ https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-
 -Djavax.net.ssl.trustStoreType=jks 
 -Djavax.net.ssl.trustStorePassword=changeit
 -Djavax.net.debug=ssl
+
+https://stackblitz.com/edit/ng-bootstrap-enable-specific-dates?file=src%2Fapp%2Fdatepicker-popup.ts
