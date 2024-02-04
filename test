@@ -42,6 +42,6 @@ https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-
 -Djavax.net.debug=ssl
 
 https://stackblitz.com/edit/ng-bootstrap-enable-specific-dates?file=src%2Fapp%2Fdatepicker-popup.ts
-
+https://dzone.com/articles/spring-batch-with-quartz
 
   @Query("SELECT l FROM library l WHERE l.addresses LIKE CONCAT('%',';',:name,';','%') OR l.addresses LIKE CONCAT('%',';',:name) OR l.addresses LIKE CONCAT(:name,';','%') OR l.addresses='8'")
