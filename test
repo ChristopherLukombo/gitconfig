@@ -20,7 +20,7 @@ https://stackblitz.com/edit/date-picker-blog-dvrdmz?file=src%2Fapp%2Fpicker%2Fpi
 
 https://www.commandprompt.com/education/postgresql-insert-if-not-exists/
 
-
+  @Query("SELECT l FROM library l WHERE l.addresses LIKE CONCAT('%',';',:name,';','%') OR l.addresses LIKE CONCAT('%',';',:name) OR l.addresses LIKE CONCAT(:name,';','%') OR l.addresses='8'")
 https://products.fileformat.com/email/java/apache-poi-hsmf/
 
 https://docs.aspose.com/email/java/creating-and-saving-msg-files/
