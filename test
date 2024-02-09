@@ -45,3 +45,6 @@ https://stackblitz.com/edit/ng-bootstrap-enable-specific-dates?file=src%2Fapp%2F
 https://dzone.com/articles/spring-batch-with-quartz
 
   @Query("SELECT l FROM library l WHERE l.addresses LIKE CONCAT('%',';',:name,';','%') OR l.addresses LIKE CONCAT('%',';',:name) OR l.addresses LIKE CONCAT(:name,';','%') OR l.addresses='8'")
+
+
+document.querySelector('[aria-label="multiselect-select-all"]')
