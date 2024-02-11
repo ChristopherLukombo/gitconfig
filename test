@@ -1,6 +1,14 @@
+  (keydown.enter)="enter($event)"
 
-
-
+  enter($enter: any) {
+    console.log($enter);
+    let d: any = document.querySelector(
+      '[aria-label="multiselect-select-all"]'
+    );
+    d.click();
+    // $enter.preventDefault();
+    console.log('test %o', this.f.name.value);
+  }
 
 https://stackblitz.com/edit/ng-bootstrap-enable-specific-dates?file=src%2Fapp%2Fdatepicker-popup.ts
 
