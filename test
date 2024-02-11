@@ -20,12 +20,10 @@ https://stackblitz.com/edit/date-picker-blog-dvrdmz?file=src%2Fapp%2Fpicker%2Fpi
 
 https://www.commandprompt.com/education/postgresql-insert-if-not-exists/
 
-  @Query("SELECT l FROM library l WHERE l.addresses LIKE CONCAT('%',';',:name,';','%') OR l.addresses LIKE CONCAT('%',';',:name) OR l.addresses LIKE CONCAT(:name,';','%') OR l.addresses='8'")
-https://products.fileformat.com/email/java/apache-poi-hsmf/
 
 https://docs.aspose.com/email/java/creating-and-saving-msg-files/
-https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad
-https://github.com/ctabin/jotlmsg
+
+
 
 .bg-success {
     --bs-bg-opacity: 1;
@@ -42,9 +40,6 @@ https://stackoverflow.com/questions/64347224/unable-to-find-valid-certification-
 -Djavax.net.debug=ssl
 
 https://stackblitz.com/edit/ng-bootstrap-enable-specific-dates?file=src%2Fapp%2Fdatepicker-popup.ts
-https://dzone.com/articles/spring-batch-with-quartz
-
-  @Query("SELECT l FROM library l WHERE l.addresses LIKE CONCAT('%',';',:name,';','%') OR l.addresses LIKE CONCAT('%',';',:name) OR l.addresses LIKE CONCAT(:name,';','%') OR l.addresses='8'")
 
 
 document.querySelector('[aria-label="multiselect-select-all"]')
