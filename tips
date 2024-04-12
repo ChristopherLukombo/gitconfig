@@ -1,0 +1,2 @@
+git filter-branch --tree-filter 'rm -f blob.txt' HEAD
+git gc --prune=now
