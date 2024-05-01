@@ -12,7 +12,7 @@
 	ll = log --oneline
 	feap = fetch --all --prune --verbose
 	rc = rebase --continue
-        ri = rebase -i
+        ri = rebase -i --autosquash
         fwl = push --force-with-lease
         cp = cherry-pick
         cpm = cherry-pick -m 1 
