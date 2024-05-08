@@ -1,0 +1,18 @@
+Supprimer le plugin maven-resources-plugin
+et ajouter le plugin suivant :
+
+<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-war-plugin</artifactId>
+						<configuration>
+							<packagingExcludes>WEB-INF/lib/tomcat-*.jar</packagingExcludes>
+							<warName>daily-follow-up</warName>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
+							<!-- Add frontend folder to war package -->
+							<webResources>
+								<resource>
+									<directory>${basedir}/../frontEnd/dist/daily-follow-up</directory>
+								</resource>
+							</webResources>
+						</configuration>
+					</plugin>
