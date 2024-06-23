@@ -1,0 +1,23 @@
+stage("Release setup") {
+            steps {
+             echo ">> RELEASE_VERSION: $params.RELEASE_VERSION"
+
+             echo ">> Version update"
+
+             withMaven(maven: 'MAVEN_ENV') {
+                sh 'mvn versions:set -DnewVersion=$RELEASE_VERSION -DprocessAllModules -DgenerateBackupPoms=false'
+                }
+
+             echo ">> Commit the modified POM file and tag the release"
+                sh('''
+                    git config user.name 'aek'
+                    git config user.email 'anicetkeric@outlook.com'
+                    git add :/*pom.xml
+                    git commit -m "Release $RELEASE_VERSION"
+                    git tag -a $RELEASE_VERSION -m "New Tag $RELEASE_VERSION"
+
+             ''')
+
+                echo ">> Release setup successfully"
+            }
+        }
