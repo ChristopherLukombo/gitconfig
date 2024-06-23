@@ -1,4 +1,21 @@
-stage("Release setup") {
+
+    stages {
+        
+        stage('Check existing tag') {
+             when {
+                expression {
+                    RELEASE_TAG = sh (script: 'git tag -l $RELEASE_VERSION',returnStdout: true).trim()
+                    return RELEASE_TAG == params.RELEASE_VERSION
+                }
+            }
+            steps {
+             echo(">> Tag $RELEASE_VERSION already exists")
+
+                sh 'git tag -d $RELEASE_VERSION'
+            }
+        }
+
+        stage("Release setup") {
             steps {
              echo ">> RELEASE_VERSION: $params.RELEASE_VERSION"
 
