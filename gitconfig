@@ -9,7 +9,8 @@
 	ci = commit
 	st = status
 	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	ll = log --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -5
+	lg = log --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -5
+        ll = log --graph --pretty=format:'%C(red)%h%Creset  %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -5
 	feap = fetch --all --prune --verbose
 	rc = rebase --continue
         ri = rebase -i --autosquash
