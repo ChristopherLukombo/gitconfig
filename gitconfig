@@ -28,3 +28,17 @@
 	autocorrect = 1
 [credential]
 	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe
+[merge]
+        tool = kdiff3
+[mergetool "kdiff3"]
+        path = kdiff3.exe
+        trustExitCode = false
+[mergetool]
+        prompt = false
+[diff]
+        guitool = kdiff3
+[difftool "kdiff3"]
+        path = kdiff3.exe
+        trustExitCode = false
+[difftool]
+        prompt = false
