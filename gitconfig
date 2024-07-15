@@ -13,6 +13,7 @@
         ll = log --pretty=format:'%C(red)%h%Creset  %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -5
 	feap = fetch --all --prune --verbose
 	rc = rebase --continue
+        ra = rebase --abort
         ri = rebase -i --autosquash
         fwl = push --force-with-lease
         cp = cherry-pick
