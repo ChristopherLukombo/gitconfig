@@ -14,3 +14,6 @@ public class SessionDemoController {
         return "Session Test completed";
     }
 }
+
+
+curl -u ${USERNAME}:${PASSWORD} http://localhost:8080/manager/jmxproxy/?get=Tomcat%3Atype%3DDatasource%2Ccontext%3D%2F${WEBAPP_NAME}%2Chost%3Dlocalhost&att=Active
