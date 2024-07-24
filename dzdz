@@ -1,0 +1,16 @@
+@RestController
+public class SessionDemoController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SessionDemoController.class);
+
+    @GetMapping("/get-session-count")
+    public String testSessionListner(HttpServletRequest request, HttpServletResponse response){
+
+        HttpSession session = request.getSession(false);
+        if(session == null){
+            LOG.info("Unable to find session. Creating a new session");
+            session = request.getSession(true);
+        }
+        return "Session Test completed";
+    }
+}
