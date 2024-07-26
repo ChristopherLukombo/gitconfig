@@ -1,3 +1,7 @@
 git filter-branch --tree-filter 'rm -f blob.txt' HEAD
 git gc --prune=now
 git log -p
+git rebase --onto master feature/test
+git rebase -i --autosquash 7887937
+git diff HEAD~1
+git rebase --onto <newparent> <oldparent> <until>
