@@ -18,6 +18,8 @@
         fwl = push --force-with-lease
         cp = cherry-pick
         cpm = cherry-pick -m 1 
+        cpc = cherry-pick --continue
+        cpa = cherry-pick --abort
 	unstage = reset HEAD
         del = push origin --delete
 [rerere]
