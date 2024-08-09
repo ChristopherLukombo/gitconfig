@@ -1,0 +1,3 @@
+enable debug
+
+curl -X POST "http://localhost:8080/actuator/loggers/com.example" -H "Content-Type: application/json" -d '{"configuredLevel":"DEBUG"}'
