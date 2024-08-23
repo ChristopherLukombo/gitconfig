@@ -7,3 +7,4 @@ git diff HEAD~1
 git diff HEAD 
 git rebase --onto <newparent> <oldparent> <until>
 git add -p
+git stash save -u "bebe"
