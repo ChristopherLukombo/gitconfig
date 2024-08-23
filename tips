@@ -4,4 +4,5 @@ git log -p
 git rebase --onto master feature/test
 git rebase -i --autosquash 7887937
 git diff HEAD~1
+git diff HEAD 
 git rebase --onto <newparent> <oldparent> <until>
