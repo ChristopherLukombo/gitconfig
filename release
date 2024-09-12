@@ -38,3 +38,21 @@
                 echo ">> Release setup successfully"
             }
         }
+
+
+def TAG_SELECTOR = "UNINTIALIZED"
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh "mvn --batch-mode -U deploy"
+                script {
+                    TAG_SELECTOR = readMavenPom().getVersion()
+                }
+                sh "mvn versions:set -DnewVersion=${TAG_SELECTOR}"
+                echo("TAG_SELECTOR=${TAG_SELECTOR}")
+            }
+        }
+    }
+}
