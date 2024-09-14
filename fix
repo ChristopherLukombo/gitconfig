@@ -3,7 +3,7 @@
 	            <artifactId>spring-boot-maven-plugin</artifactId>
 	            <executions>
 	                <execution>
-	                    <id>repackage</id>
+	                    <id>package</id>
 	                    <goals>
 	                        <goal>repackage</goal>
 	                    </goals>
