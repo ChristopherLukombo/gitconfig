@@ -2,6 +2,8 @@
 	rebase = true
 [user]
 	name = Christopher LUKOMBO
+[fetch]
+    prune = true
 [alias]
 	co = checkout
 	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:white)%(authorname)' --sort=-committerdate
