@@ -5,3 +5,4 @@ curl -X POST "http://localhost:8080/actuator/loggers/com.example" -H "Content-Ty
 
 remote debugging
 -Dspring-boot.run.jvmArguments="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
