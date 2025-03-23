@@ -25,6 +25,7 @@
         cpa = cherry-pick --abort
 	unstage = reset HEAD
         del = push origin --delete
+        wt = worktree
 [rerere]
 	enabled = true
 [core]
