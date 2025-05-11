@@ -6,3 +6,5 @@ curl -X POST "http://localhost:8080/actuator/loggers/com.example" -H "Content-Ty
 remote debugging
 For war : -Dspring-boot.run.jvmArguments="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
 For jar : -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+
+https://github.com/Edouard06/Testez-une-application-full-stack/tree/master
