@@ -1,1 +1,64 @@
 # gitconf
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialog } from '@angular/material/dialog';
+import { TranslateService } from '@ngx-translate/core';
+import { NGXLogger } from 'ngx-logger';
+import { TranslateTestingModule } from 'ngx-translate-testing';
+import { AppComponent } from './app.component';
+import { CountryCode } from './enums/country-code.enum';
+
+describe('AppComponent', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
+  beforeEach(() => {
+    const matDialogStub = () => ({
+      open: (_legalNoticeComponent: unknown, _object: unknown) => ({})
+    });
+
+    const nGXLoggerStub = () => ({
+      debug: (_lANGUAGE_CHANGE: unknown, _language: unknown) => ({})
+    });
+    const translateServiceStub = () => ({
+      setDefaultLang: (_lANGUAGE_CHANGE: unknown) => ({}),
+      addLangs: (_langs: unknown) => ({}),
+      use: (_country: unknown) => ({}),
+      instant: (_trad: unknown) => ({})
+    });
+
+    TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
+      declarations: [AppComponent],
+      imports: [
+        TranslateTestingModule
+          .withTranslations('fr', require('src/assets/i18n/fr.json'))
+          .withTranslations('en', require('src/assets/i18n/en.json'))
+      ],
+      providers: [
+        { provide: MatDialog, useFactory: matDialogStub },
+        { provide: NGXLogger, useFactory: nGXLoggerStub },
+        { provide: TranslateService, useFactory: translateServiceStub }
+      ],
+      teardown: { destroyAfterEach: false }
+    });
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+  });
+
+  it('can load instance', () => {
+    expect(component).toBeTruthy();
+  });
+
+  describe('should openLegalNotice', () => {
+    it('makes expected calls', () => {
+      const matDialogStub: MatDialog = fixture.debugElement.injector.get(
+        MatDialog
+      );
+      jest.spyOn(matDialogStub, 'open').mockImplementation();
+
+      component.openLegalNotice();
+
+      expect(matDialogStub.open).toHaveBeenCalled();
+    });
+  });
