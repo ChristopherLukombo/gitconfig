@@ -1,0 +1,36 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SharedService } from './shared.service';
+import { SharedComponent } from './shared.component';
+import { SharedDirective } from './shared.directive';
+
+@NgModule({
+  imports: [
+    CommonModule
+  ],
+  declarations: [
+    SharedComponent,
+    SharedDirective
+  ],
+  exports: [
+    SharedComponent,
+    SharedDirective
+  ],
+  providers: [
+    SharedService
+  ]
+})
+export class SharedModule { }
+
+
+-------------------------------------------------------------------------------------------------------------
+
+import { SharedModule } from './shared/shared.module';
+
+@NgModule({
+  imports: [
+    SharedModule
+  ],
+  // autres déclarations du module
+})
+export class MonModule { }
