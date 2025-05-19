@@ -16,3 +16,10 @@
 
 
 java -cp demo-0.0.1-SNAPSHOT.war -Dloader.main=com.example.demo.DemoApplication org.springframework.boot.loader.launch.WarLauncher
+
+
+  height: 150px;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  border: 3px solid
