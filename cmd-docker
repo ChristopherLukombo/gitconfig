@@ -1,0 +1,2 @@
+docker build -t krish186/sample-angular-app-image:latest  .
+docker run -d -p 8080:80 krish186/sample-angular-app-image:latest
